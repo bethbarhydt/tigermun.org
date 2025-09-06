@@ -1,70 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TigerMUN 2026 • Greenwich Country Day School</title>
+  <meta name="description" content="Official site for TigerMUN 2026 at Greenwich Country Day School." />
+  <meta property="og:title" content="TigerMUN 2026 • Greenwich Country Day School" />
+  <meta property="og:description" content="Conference day: Saturday, March 21, 2026." />
+  <meta property="og:image" content="assets/tigermun_logo.png" />
+  <link rel="icon" href="assets/tigermun_logo.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/tigermun_logo.png" alt="TigerMUN Logo" />
+        <span class="brand-text">TigerMUN 2026</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#committees">Committees</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#secretariat">Secretariat</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="venue">
-      <h2>Venue &amp; Parking</h2>
-      <p><strong>Location:</strong> Greenwich Country Day School, Greenwich, CT</p>
-      <ul class="details bullet">
-        <li><strong>Main Entrance:</strong> Follow event signage to registration desks.</li>
-        <li><strong>Parking:</strong> Free on-site parking for cars and vans. Bus parking available—please notify us in advance.</li>
-        <li><strong>Drop-off:</strong> Use the main loop; volunteers will direct delegates to check-in.</li>
-        <li><strong>Accessibility:</strong> ADA-compliant entrances and restrooms are available. Contact us to arrange any specific accommodations.</li>
-        <li><strong>Map:</strong> <a href="https://maps.google.com/?q=Greenwich+Country+Day+School" target="_blank" rel="noopener">Open in Google Maps</a></li>
-      </ul>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>TigerMUN 2026</h1>
+          <p class="lede">Conference day: <strong>Saturday, March 21, 2026</strong></p>
+          <p class="lede">Hosted by Greenwich Country Day School</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#registration">Register</a>
+            <a class="btn" href="assets/tigermun_2026.ics" download>Add to Calendar</a>
+          </div>
+          <div id="countdown" class="countdown" aria-live="polite"></div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/tigermun_logo.png" alt="TigerMUN 2026 Logo" />
+        </div>
+      </div>
     </section>
 
-    <section id="faq">
-      <h2>FAQ</h2>
-      <div class="faq">
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>TigerMUN is a one‑day Model United Nations conference designed for engaged delegates and supportive advisors. The program emphasizes research, clarity, collaboration, and diplomacy.</p>
+        <div class="at-a-glance">
+          <div class="card">
+            <h3>Conference Day</h3>
+            <p>Saturday, March 21, 2026</p>
+          </div>
+          <div class="card">
+            <h3>Host</h3>
+            <p>Greenwich Country Day School</p>
+          </div>
+          <div class="card">
+            <h3>Committees</h3>
+            <p>Beginner to advanced, including a Security Council and a crisis option.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="committees" class="section alt">
+      <div class="container">
+        <h2>Committees</h2>
+        <div class="grid3">
+          <article class="committee">
+            <h3>UNGA DISEC</h3>
+            <p>Topic A: Small Arms and Light Weapons</p>
+            <p>Topic B: Outer Space Security</p>
+            <a class="inline" href="#" aria-label="Background guide for DISEC">Background Guide (PDF)</a>
+          </article>
+          <article class="committee">
+            <h3>WHO</h3>
+            <p>Topic A: Antimicrobial Resistance</p>
+            <p>Topic B: Vaccine Equity</p>
+            <a class="inline" href="#" aria-label="Background guide for WHO">Background Guide (PDF)</a>
+          </article>
+          <article class="committee">
+            <h3>SOCHUM</h3>
+            <p>Topic A: Digital Privacy and Human Rights</p>
+            <p>Topic B: Refugee Integration</p>
+            <a class="inline" href="#" aria-label="Background guide for SOCHUM">Background Guide (PDF)</a>
+          </article>
+          <article class="committee">
+            <h3>UN Security Council</h3>
+            <p>Agenda: Peace and Security—current docket set closer to the conference.</p>
+            <a class="inline" href="#" aria-label="Background guide for UNSC">Background Guide (PDF)</a>
+          </article>
+          <article class="committee">
+            <h3>Historical Crisis</h3>
+            <p>Fast‑paced, directive‑driven crisis simulation. Scenario released in advance.</p>
+            <a class="inline" href="#" aria-label="Crisis briefing">Crisis Brief (PDF)</a>
+          </article>
+          <article class="committee">
+            <h3>Novice GA</h3>
+            <p>Training room with guided procedure and feedback for new delegates.</p>
+            <a class="inline" href="#" aria-label="Novice guide">Novice Guide (PDF)</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration" class="section">
+      <div class="container">
+        <h2>Registration</h2>
+        <p>Delegations register by school. Please use the online form. Payment details are provided after approval.</p>
+        <div class="grid2">
+          <div class="card">
+            <h3>Key Dates</h3>
+            <ul class="checklist">
+              <li><span>Registration deadline: <strong>February 15, 2026</strong></span></li>
+              <li><span>Position paper deadline: <strong>February 29, 2026</strong></span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Register Your School</h3>
+            <p>After submitting the form, you will receive a confirmation email with next steps.</p>
+            <p><a class="btn primary" href="#" id="registerLink">Open Registration Form</a></p>
+            <p class="note">Replace the link in <code>script.js</code> with your Google Form or custom portal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <h2>Schedule (draft)</h2>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead><tr><th>Time</th><th>Item</th></tr></thead>
+            <tbody>
+              <tr><td>8:00–8:45</td><td>Check‑in and setup</td></tr>
+              <tr><td>8:45–9:15</td><td>Opening ceremony</td></tr>
+              <tr><td>9:30–12:00</td><td>Committee Session I</td></tr>
+              <tr><td>12:00–1:00</td><td>Lunch</td></tr>
+              <tr><td>1:00–3:30</td><td>Committee Session II</td></tr>
+              <tr><td>3:45–4:30</td><td>Closing ceremony and awards</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="venue" class="section">
+      <div class="container">
+        <h2>Venue</h2>
+        <p>Greenwich Country Day School • Greenwich, Connecticut</p>
+        <p class="note">Insert your campus address and parking instructions.</p>
+        <div class="grid2">
+          <div class="card">
+            <h3>Directions</h3>
+            <p>Provide bus drop‑off, parking instructions, and building entry points.</p>
+          </div>
+          <div class="card">
+            <h3>Accessibility</h3>
+            <p>All rooms are accessible. Contact the team to arrange accommodations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="secretariat" class="section alt">
+      <div class="container">
+        <h2>Secretariat</h2>
+        <div class="grid3 minis">
+          <div class="card person">
+            <h3>Secretary‑General</h3>
+            <p>Name to be announced</p>
+          </div>
+          <div class="card person">
+            <h3>USG Academics</h3>
+            <p>Name to be announced</p>
+          </div>
+          <div class="card person">
+            <h3>USG Operations</h3>
+            <p>Name to be announced</p>
+          </div>
+          <div class="card person">
+            <h3>USG Technology</h3>
+            <p>Name to be announced</p>
+          </div>
+          <div class="card person">
+            <h3>USG Communications</h3>
+            <p>Name to be announced</p>
+          </div>
+          <div class="card person">
+            <h3>Faculty Advisor</h3>
+            <p>Name to be announced</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <h2>Resources</h2>
+        <ul class="resource-list">
+          <li><a href="#" download>Rules of Procedure (PDF)</a></li>
+          <li><a href="#" download>Position Paper Guidelines (PDF)</a></li>
+          <li><a href="#" download>Delegate Handbook (PDF)</a></li>
+          <li><a href="assets/tigermun_2026.ics" download>Calendar File (.ics)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Who can attend?</summary>
+          <p>High‑school delegations with an advisor. Independent delegates should contact the team in advance.</p>
+        </details>
         <details>
           <summary>What is the dress code?</summary>
-          <p>Western business attire. National and cultural dress is welcome.</p>
-        </details>
-        <details>
-          <summary>Do we submit position papers?</summary>
-          <p>Yes—one page per topic. Email PDFs or DOCX to <a href="mailto:SBarhydt26@GCDS.net">SBarhydt26@GCDS.net</a> by March 14, 2026 at 11:59 PM ET.</p>
-        </details>
-        <details>
-          <summary>Are meals provided?</summary>
-          <p>Lunch is included with delegate fees. Vegetarian and gluten-free options available.</p>
+          <p>Standard conference attire.</p>
         </details>
         <details>
           <summary>How are awards determined?</summary>
-          <p>Chairs evaluate diplomacy, policy knowledge, collaboration, and writing. Awards include Best Delegate, Outstanding, and Honorable Mention per committee, plus Best Delegation.</p>
-        </details>
-        <details>
-          <summary>Is technology allowed in committee?</summary>
-          <p>Laptops and tablets are permitted at the chairs’ discretion for drafting. Messaging with other rooms or outside parties is not allowed.</p>
-        </details>
-        <details>
-          <summary>Accessibility &amp; accommodations?</summary>
-          <p>We can arrange room placement, seating, or other accommodations. Email <a href="mailto:SBarhydt26@GCDS.net">SBarhydt26@GCDS.net</a>.</p>
+          <p>Chairs evaluate preparation, procedure, policy knowledge, clarity, collaboration, and impact.</p>
         </details>
       </div>
     </section>
 
-    <section id="secretariat">
-      <h2>Secretariat &amp; Organizers</h2>
-      <div class="cards headshots">
-        <article class="card">
-          <img src="assets/headshots/placeholder.png" alt="Headshot: Steele Barhydt">
-          <h3>Steele Barhydt</h3>
-          <p><em>Organizer, Webmaster, Primary Contact</em><br>
-          <a href="mailto:SBarhydt26@GCDS.net">SBarhydt26@GCDS.net</a></p>
-        </article>
-        <article class="card">
-          <img src="assets/headshots/placeholder.png" alt="Headshot: Faculty Advisor">
-          <h3>Faculty Advisor</h3>
-          <p><em>Name forthcoming</em><br><span class="muted">Add photo as assets/headshots/faculty1.jpg</span></p>
-        </article>
-        <article class="card">
-          <img src="assets/headshots/placeholder.png" alt="Headshot: Committee Director">
-          <h3>Committee Director</h3>
-          <p><em>Name forthcoming</em><br><span class="muted">Add photo as assets/headshots/director1.jpg</span></p>
-        </article>
-        <article class="card">
-          <img src="assets/headshots/placeholder.png" alt="Headshot: Operations Lead">
-          <h3>Operations Lead</h3>
-          <p><em>Name forthcoming</em><br><span class="muted">Add photo as assets/headshots/ops1.jpg</span></p>
-        </article>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tigermun@gcds.net">tigermun@gcds.net</a></p>
+        <p class="note">Update this address and add a contact form if desired.</p>
       </div>
-      <p class="muted small">To add headshots, upload JPG/PNG files into <code>assets/headshots/</code> and update names/titles here.</p>
     </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 TigerMUN • Greenwich Country Day School</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
